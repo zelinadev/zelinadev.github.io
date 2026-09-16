@@ -1,0 +1,59 @@
+:root {
+    --color-accent: #46cb7e;
+    --color-text: #d6d6d6;
+    --color-background: #2a2e30;
+}
+
+@font-face {
+    font-family: Cantarell;
+    src: url(/assets/cantarell.ttf);
+    font-weight: 400;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    max-width: 800px;
+    min-height: 100svh;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text {
+    font-family: Cantarell, sans-serif;
+    color: var(--color-text);
+}
+
+.text-link {
+    color: var(--color-accent);
+}
+
+.text-lg {
+    font-size: 32px;
+}
+
+.text-md {
+    font-size: 24px;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
