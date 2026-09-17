@@ -1,7 +1,7 @@
 :root {
-    --color-accent: #46cb7e;
+    --color-accent: #79eb6d;
     --color-text: #d6d6d6;
-    --color-background: #2a2e30;
+    --color-background: #17191a;
 }
 
 @font-face {
@@ -23,9 +23,7 @@ body {
 
 
 .container {
-    max-width: 800px;
-    min-height: 100svh;
-    padding: 10px;
+    max-width: 768px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -33,13 +31,14 @@ body {
 
 }
 
+.main {
+    padding: 32px;
+    min-height: 100svh;
+}
+
 .text {
     font-family: Cantarell, sans-serif;
     color: var(--color-text);
-}
-
-.text-link {
-    color: var(--color-accent);
 }
 
 .text-lg {
@@ -54,6 +53,17 @@ body {
     font-weight: bold;
 }
 
+
+.text-italic {
+    font-style: italic;
+}
+
 a {
-    text-decoration: none;
+    font-family: Cantarell, sans-serif;
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+a:hover {
+    cursor: pointer;
 }
